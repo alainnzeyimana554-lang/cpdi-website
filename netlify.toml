@@ -1,0 +1,15 @@
+# Netlify configuration — C.P.D.I. website (Next.js 15 + Sanity)
+
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Public Sanity config (NEXT_PUBLIC_* values are not secret — they ship in the client bundle).
+  NEXT_PUBLIC_SANITY_PROJECT_ID  = "n4sju5pf"
+  NEXT_PUBLIC_SANITY_DATASET     = "production"
+  NEXT_PUBLIC_SANITY_API_VERSION = "2026-05-30"
+
+# Official Netlify runtime for Next.js (SSR, image optimization, /studio, etc.)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
