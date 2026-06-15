@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-blue:        #1565C0;
+  --color-green:       #1B7A3D;
+  --color-lime:        #8BB617;
+  --color-dark-blue:   #0D3B6F;
+  --color-light-blue:  #E8F0FE;
+  --color-light-green: #EAF5E4;
+  --color-charcoal:    #2C2C2A;
+  --color-bg:          #F5F5F3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-charcoal);
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility: opacity-0 initial state for scroll reveal */
+.reveal-initial {
+  opacity: 0;
+  transform: translateY(24px);
+}
